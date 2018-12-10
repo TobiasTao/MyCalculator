@@ -1,0 +1,38 @@
+﻿<Window x:Class="MyCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfCalc"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="630" Width="500">
+    <Grid>
+        <Border Margin="5" Padding="5"  BorderBrush="SteelBlue" BorderThickness="3,5,3,5" CornerRadius="10" VerticalAlignment="Top" Height="130" Width="440">
+            <!--<TextBlock Name="InputTextBox" Text="" Height="100" Width="450" VerticalAlignment="Top" FontSize="70" Margin="2,15,20,20" HorizontalAlignment="Right" FlowDirection="RightToLeft">
+            </TextBlock>-->
+            <TextBlock Name ="InputTextBox" VerticalAlignment="Top" HorizontalAlignment="Right"  Margin="16,16,16,0" Height="50" FontSize="40" TextWrapping="Wrap"></TextBlock>
+        </Border>
+        <UniformGrid Rows="5" Columns="4" Height="400" Width="450" Margin="5,160,6,20">
+            <Button Name="Btn7" Content="7" Style="{StaticResource MyWpfButton}" FontSize="35" Click="Btn7_Click"/>
+            <Button Name="Btn8" Content="8" Style="{StaticResource MyWpfButton}" FontSize="35" Click="Btn8_Click"/>
+            <Button Name="Btn9" Content="9" Style="{StaticResource MyWpfButton}" FontSize="35" Click="Btn9_Click"/>
+            <Button Name="BtnPlus" Content="+" Style="{StaticResource MyWpfButton}" FontSize="35" Click="BtnPlus_Click"/>
+            <Button Name="Btn4" Content="4" Style="{StaticResource MyWpfButton}" FontSize="35" Click="Btn4_Click"/>
+            <Button Name="Btn5" Content="5" Style="{StaticResource MyWpfButton}" FontSize="35" Click="Btn5_Click"/>
+            <Button Name="Btn6" Content="6" Style="{StaticResource MyWpfButton}" FontSize="35" Click="Btn6_Click"/>
+            <Button Name="BtnMinus" Content="-" Style="{StaticResource MyWpfButton}" FontSize="35" Click="BtnMinus_Click"/>
+            <Button Name="Btn1" Content="1" Style="{StaticResource MyWpfButton}" FontSize="35" Click="Btn1_Click"/>
+            <Button Name="Btn2" Content="2" Style="{StaticResource MyWpfButton}" FontSize="35" Click="Btn2_Click"/>
+            <Button Name="Btn3" Content="3" Style="{StaticResource MyWpfButton}" FontSize="35" Click="Btn3_Click"/>
+            <Button Name="BtnMultiple" Content="x" Style="{StaticResource MyWpfButton}" FontSize="35" Click="BtnMultiple_Click"/>
+            <Button Name="Btn0" Content="0" Style="{StaticResource MyWpfButton}" FontSize="35" Click="Btn0_Click"/>
+            <Button Name="BtnDot" Content="." Style="{StaticResource MyWpfButton}" FontSize="35" Click="BtnDot_Click"/>
+            <Button Name="BtnDEl" Content="DEl" Style="{StaticResource MyWpfButton}" FontSize="35" Click="BtnDEL_Click"/>
+            <Button Name="BtnDivsion" Content="/" Style="{StaticResource MyWpfButton}" FontSize="35" Click="BtnDivision_Click"/>
+            <Button Name="BtnLeft" Content="(" Style="{StaticResource MyWpfButton}" FontSize="35" Click="BtnLeft_Click"/>
+            <Button Name="BtnRight" Content=")" Style="{StaticResource MyWpfButton}" FontSize="35" Click="BtnRight_Click"/>
+            <Button Name="BtnAc" Content="AC" Style="{StaticResource MyWpfButton}" FontSize="35" Click="BtnAC_Click"/>
+            <Button Name="BtnEqual" Content="=" Style="{StaticResource MyWpfButton}" FontSize="35" Click="BtnEqual_OnClick"/>
+        </UniformGrid>
+    </Grid>
+</Window>
